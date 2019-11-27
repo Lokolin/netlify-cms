@@ -1,12 +1,18 @@
+# backend:
+#   name: git-gateway
+#   branch: master
+#   commit_messages:
+#     create: 'Create {{collection}} “{{slug}}”'
+#     update: 'Update {{collection}} “{{slug}}”'
+#     delete: 'Delete {{collection}} “{{slug}}”'
+#     uploadMedia: '[skip ci] Upload “{{path}}”'
+#     deleteMedia: '[skip ci] Delete “{{path}}”'
+
 backend:
-  name: git-gateway
-  branch: master
-  commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+  name: github
+  repo: user/repo   # Path to your Github/Gitlab repository
+  branch: master    # Branch to update
+  base_url: https://netlify-oauth-serv.herokuapp.com/ # Path to ext auth provider
 
 media_folder: static/img
 public_folder: /img
