@@ -10,7 +10,7 @@
 
 backend:
   name: github
-  repo: netlify-cms # Path to your Github/Gitlab repository
+  repo: Lokolin/netlify-cms # Path to your Github/Gitlab repository
   branch: master # Branch to update
   base_url: https://netlify-oauth-serv.herokuapp.com/ # Path to ext auth provider
 
